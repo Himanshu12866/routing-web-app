@@ -1,6 +1,7 @@
 
 import { BrowserRouter, Routes , Route } from "react-router-dom";
 import FakestoreHome from "./Components/fakestorehome";
+// import FakeStore from "./Components/fakestoreindex";
 
 
 function App() {
@@ -13,8 +14,8 @@ function App() {
     <div className="section">
       <BrowserRouter>
         <Routes>
-         <Route path="/" element={<FakestoreHome/>}/>
-         <Route path="products/:category" element={<div>Home Page</div>}></Route>
+         <Route path="/"  element={<FakestoreHome/>}></Route>
+         {/* <Route path="products" element={<FakestoreProducts/>}/> */}
         </Routes>
       </BrowserRouter>
     </div>

@@ -20,7 +20,7 @@ export default function FakestoreHome() {
     return (
         <div className="contianer">
             <nav className="navbar navbar-expand-sm ">
-                <a className="navbar-brand fs-3 fw-bold" href="/dasd"> Shopper.</a>
+                <p className="navbar-brand fs-3 fw-bold"> Shopper.</p>
                 <button className="navbar-toggler" data-bs-target="#list" data-bs-toggle="collapse">
                     <span className="bi bi-list"></span> </button>
                 <div className="navbar-collapse collapse  d-flex justify-content-between" id="list">
@@ -28,7 +28,7 @@ export default function FakestoreHome() {
                         {
                             category.map((cat, index) =>
                                 <li className="nav-item" index={index}>
-                                    <Link to="/" className="nav-link fw-bold">{cat.toUpperCase()}</Link>
+                                    <Link to={"/"} className="nav-link fw-bold">{cat.toUpperCase()}</Link>
                                 </li>
                             )
                         }
