@@ -28,7 +28,7 @@ export default function FakestoreHome() {
                         {
                             category.map((cat, index) =>
                                 <li className="nav-item" index={index}>
-                                    <Link to={"/"} className="nav-link fw-bold">{cat.toUpperCase()}</Link>
+                                    <Link to={`products/${cat}`} className="nav-link fw-bold">{cat.toUpperCase()}</Link>
                                 </li>
                             )
                         }
