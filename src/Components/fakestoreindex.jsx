@@ -1,7 +1,7 @@
 
 
 
-export default function FakeStoreHome(){
+export default function FakeStore(){
 
     return(
         <div>

@@ -1,6 +1,7 @@
 
 import { BrowserRouter, Routes , Route } from "react-router-dom";
-import FakeStoreHome from "./Components/fakestoreindex";
+import FakestoreHome from "./Components/fakestorehome";
+
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
     <div className="section">
       <BrowserRouter>
         <Routes>
-         <Route path="/" element={<FakeStoreHome/>}/>
+         <Route path="/" element={<FakestoreHome/>}/>
+         <Route path="products/:category" element={<div>Home Page</div>}></Route>
         </Routes>
       </BrowserRouter>
     </div>
