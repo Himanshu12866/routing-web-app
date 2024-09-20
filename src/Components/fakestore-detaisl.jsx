@@ -22,7 +22,7 @@ export  function FakestoreDetails(){
         <div>
             <h3>Details</h3>
             <dl style={{width:'300px'}}>
-                <img src={product.image} height="200" width="200" />
+                <img src={product.image} alt="name" height="200" width="200" />
                 <dt>Title</dt>
                 <dd>{product.title}</dd>
                 <dt>Price</dt>
