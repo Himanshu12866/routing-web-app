@@ -6,7 +6,7 @@
 
 //     return (
 //         <div>
-        
+
 //         <Link to="/">{<FakestoreHome/>}</Link>  </div>
 //     )
 // }
@@ -16,8 +16,8 @@ import { FakestoreDetails } from "./fakestore-detaisl";
 import { FakestoreHome } from "./fakestorehome";
 import { FakestoreProducts } from "./fakestoreproducts";
 
-export function FakestoreIndex(){
-    return(
+export function FakestoreIndex() {
+    return (
         <div className="container-fluid">
             <BrowserRouter>
                 <header className="bg-dark text-white text-center p-1">
@@ -29,7 +29,7 @@ export function FakestoreIndex(){
                         <Route path='products/:category' element={<FakestoreProducts />}>
                             <Route path='details/:id' element={<FakestoreDetails />} />
                         </Route>
-                        
+
                         <Route path="*" element={<h2 className="text-danger">Not Found</h2>} />
                     </Routes>
                 </section>

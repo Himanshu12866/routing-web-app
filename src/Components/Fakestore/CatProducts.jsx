@@ -23,7 +23,7 @@ export default function CatProducts() {
             .then(response => {
                 setProducts(response.data)
             })
-    })
+    },[params.list])
     return (
         <div className="container d-flex flex-wrap p-2">
             {
