@@ -6,9 +6,11 @@
 // import Fakeindex from "./Route/fakeindex";
 // import FakeStore from "./Components/fakestoreindex";
 
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import IndexFake from "./Components/Fakestore/FakeIndex";
-import CatProducts from "./Components/Fakestore/CatProducts";
+// import { BrowserRouter, Route, Routes } from "react-router-dom";
+// import IndexFake from "./Components/Fakestore/FakeIndex";
+// import CatProducts from "./Components/Fakestore/CatProducts";
+// import FakeOfIndex from "./Components/Folder1/indexOfFake";
+import RouteApp from "./Components/Folder1/RouteApp";
 
 
 function App() {
@@ -16,13 +18,15 @@ function App() {
     <div className="App">
   {/* <FakestoreIndex/> */}
       {/* <Fakeindex/> */}
-      <BrowserRouter>
+      {/* <BrowserRouter>
         <Routes>
         
           <Route path="/" element={<IndexFake/>}/>
           <Route path="/products/:category" element={<CatProducts/>}></Route>
         </Routes>
-      </BrowserRouter>
+      </BrowserRouter> */}
+
+      <RouteApp/>
     </div>
   );
 }
