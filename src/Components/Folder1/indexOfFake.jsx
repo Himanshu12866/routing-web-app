@@ -18,7 +18,7 @@ export default function FakeOfIndex() {
     }
 
     useEffect(() => {
-        list.unshift("All")
+       
         axios.get("https://fakestoreapi.com/products/categories")
             .then(response => {
                 setList(response.data)

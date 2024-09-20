@@ -18,7 +18,7 @@ export default function CategoryApp() {
             })
 
             // console.log(products)
-    }, [])
+    }, [params.category])
 
     return (
         <div className="container d-flex flex-wrap p-2">
