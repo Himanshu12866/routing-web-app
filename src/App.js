@@ -10,7 +10,7 @@
 // import IndexFake from "./Components/Fakestore/FakeIndex";
 // import CatProducts from "./Components/Fakestore/CatProducts";
 // import FakeOfIndex from "./Components/Folder1/indexOfFake";
-import RouteApp from "./Components/Folder1/RouteApp";
+// import RouteApp from "./Components/Folder1/RouteApp";
 
 
 function App() {
@@ -26,7 +26,7 @@ function App() {
         </Routes>
       </BrowserRouter> */}
 
-      <RouteApp/>
+      {/* <RouteApp/> */}
     </div>
   );
 }
