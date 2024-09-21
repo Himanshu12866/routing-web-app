@@ -6,6 +6,8 @@
 // import Fakeindex from "./Route/fakeindex";
 // import FakeStore from "./Components/fakestoreindex";
 
+import FileIndex1 from "./Components/Folder2/fileIndex";
+
 // import { BrowserRouter, Route, Routes } from "react-router-dom";
 // import IndexFake from "./Components/Fakestore/FakeIndex";
 // import CatProducts from "./Components/Fakestore/CatProducts";
@@ -27,6 +29,7 @@ function App() {
       </BrowserRouter> */}
 
       {/* <RouteApp/> */}
+      <FileIndex1/>
     </div>
   );
 }
