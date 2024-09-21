@@ -15,7 +15,7 @@ export default function FileIndex1() {
                     <Route path="/" element={<LayOut />}>
                         <Route path="" exact element={<Home />} />
                         <Route path="products/:item" element={<FileProducts1 />}>
-                            <Route path="products/:id"  element={<ChildProducts/>}/>
+                            <Route path=":id"  element={<ChildProducts/>}/>
                         </Route>
 
                     </Route>

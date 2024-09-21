@@ -21,11 +21,12 @@ export default function FileProducts1() {
             .then(response => {
                 setProducts(response.data)
             })
-    })
+    },[params.item])
 
     return (
         <div className="d-flex flex-wrap text-center  m-2 p-2" style={{ height: "auto", backgroundColor: "black" }}>
-            {
+            {(params.id) ? (<Outlet />) : (
+
                 products.map(product =>
                     <div className="card m-2 " key={product} style={{ width: "260px", height: "500px" }}>
                         <div className="text-center p-1">
@@ -40,19 +41,17 @@ export default function FileProducts1() {
                                 <p className="text-light" style={{ fontSize: "14px" }}><span className="badge bg-primary bi bi-star-fill">&nbsp;{product.rating.rate}</span> Ratings</p>
                                 <p className="text-light" style={{ fontSize: "14px" }}><span className="badge bg-success bi bi-people-fill">&nbsp;{product.rating.count}</span>&nbsp;Reviews</p>
                             </div>
-                           
-                                <Link to={`products/${product.id}`} className="btn btn-danger w-100"><span className="bi bi-eye"> </span>&nbsp;View</Link>
-                           
+
+                            <Link to={`/products/${params.item}/${product.id}`} className="btn btn-danger w-100"><span className="bi bi-eye"> </span>&nbsp;View</Link>
+
                         </div>
                         <div className="card-footer">
                             <button className="btn btn-warning w-100"> Add to Cart</button>
                         </div>
 
                     </div>
-                )
+                ))
             }
-           
-
         </div>
     )
 }
