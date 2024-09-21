@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 
-export default function FileHome1() {
+export default function Header() {
     const [list, setList] = useState([])
     useEffect(() => {
         axios.get("https://fakestoreapi.com/products/categories")
@@ -13,10 +13,10 @@ export default function FileHome1() {
     })
 
     return (
-        <div className="d-flex justify-content-center align-items-center position-relative" style={{ width: "100%", height: "100vh" }}>
-            <img alt="nameshop" src="imageShop.jpg" style={{ width: "100%" }}></img>
-            <div className="position-absolute" style={{ top: 0, width: "100%", padding: "15px" }}>
-                <nav className="navbar navbar-expand-lg">
+        <div className="d-flex justify-content-center align-items-center position-relative" style={{ width: "100%", height: "80px" }}>
+            {/* <img alt="nameshop" src="imageShop.jpg" style={{ width: "100%" }}></img> */}
+            <div className="position-absolute" style={{ top: 0, width: "100%" }}>
+                <nav className="navbar navbar-expand-lg bg-dark p-2">
                     <a className="navbar-brand text-light fs-3" href="/">Shopper.</a>
                     <button className="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#links">
                         <span className="bi bi-list"></span>
@@ -32,7 +32,7 @@ export default function FileHome1() {
                                 </li>)
                             }
                         </ul>
-                        <ul className="navbar-nav"> 
+                        <ul className="navbar-nav">
                             <li className="nav-item">
                                 <p className="nav-link"><span className="text-light fs-5 bi bi-heart"></span></p>
                             </li>
@@ -45,7 +45,11 @@ export default function FileHome1() {
                         </ul>
                     </div>
                 </nav>
+               
             </div>
+            {/* <div className="fs-1 position-absolute">
+            <h1 className="text-light">Please Login to Countine</h1>
+            </div> */}
 
 
         </div>
