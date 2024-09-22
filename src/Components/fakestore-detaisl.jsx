@@ -10,14 +10,11 @@ export  function FakestoreDetails(){
 
 
     useEffect(()=>{
-
         axios.get(`https://fakestoreapi.com/products/${params.id}`)
         .then(response=>{
             setProduct(response.data);
         })
-
     },[params.id])
-
     return(
         <div>
             <h3>Details</h3>
@@ -28,7 +25,6 @@ export  function FakestoreDetails(){
                 <dt>Price</dt>
                 <dd>{product.price}</dd>
             </dl>
-
         </div>
     )
 }
