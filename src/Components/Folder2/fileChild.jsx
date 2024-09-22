@@ -34,8 +34,8 @@ export default function ChildProducts() {
                         <h4 className="text-light"> <span className="fs-4">₹</span>{product.price} .00</h4>
                     </div>
                     <p className="text-light"> 
-                        {/* <span className="badge bi bi-star-fill bg-primary">&nbsp;{product.rating.rate}</span> Ratings   */}
-                        {/* <span className="badge bg-success bi bi-people-fill">{product.rating.count}</span>  */}
+                        <span className="badge bi bi-star-fill bg-primary">&nbsp;{product.rating.rate}</span> Ratings  
+                        <span className="badge bg-success bi bi-people-fill">{product.rating.count}</span> 
                     </p>
 
 
