@@ -25,5 +25,17 @@ app.get("/products" , (req,res) => {
         }
     )
 })
+app.get("/products/:id" ,( req,res) => {
+ 
+    MongoClient.connect(url).then(clientObj => {
+        const db = clientObj.db("admin")
+        db.collection("products").find({categories: req.params.id }).toArray().then(document => {
+            res.send(document)
+            res.end()
+        })
+    })
+})
+
+
 app.listen(5500)
 console.log("Server Started at http://127.0.0.1:5500")
