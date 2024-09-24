@@ -51,7 +51,8 @@ export default function ChildProducts() {
                             <button className="btn btn-success w-100 p-3">Buy Now</button>
                         </div>
                         <div className="col-4">
-                            <Link to={`products`}  className="btn btn-warning w-100 p-3">Go Back To Products</Link>
+                        <Link className="text-light btn btn-danger w-100 p-3" to={`/`}>Go Back to Home</Link>
+
                         </div>
                     </div>
                 </div>

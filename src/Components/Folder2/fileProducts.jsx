@@ -21,7 +21,7 @@ export default function FileProducts1() {
             .then(response => {
                 setProducts(response.data)
             })
-    },[params.item])
+    }, [params.item])
 
     return (
         <div className="d-flex flex-wrap text-center  m-2 p-2" style={{ height: "auto", backgroundColor: "black" }}>
