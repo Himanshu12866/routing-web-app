@@ -11,7 +11,7 @@ export default function CategoryApp() {
 
     let params = useParams()
     useEffect(() => {
-        // console.log(params.category)
+        // console.log(params
         axios.get(`https://fakestoreapi.com/products/category/${params.category}`)
             .then(response => {
                 setProducts(response.data)
